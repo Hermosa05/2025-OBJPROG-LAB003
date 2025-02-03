@@ -1,7 +1,7 @@
-2025-ADVDBMS-WK02S0E01
-Week 02 - Review on Database Concepts
+2025-OBJPROG-WK02S0E02
+Week 02 - Introduction to Java Programming
 
-Exercise # 01 - Guided Coding Exercise: Database Creation and Management
+Exercise # 02 - Guided Coding Exercise: Variable Declarations & Case-Sensitivity
 
 ## **Instructions**
 
@@ -77,69 +77,96 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Exercise # 01 - Guided Coding Exercise: Database Creation and Management**
+**Exercise # 02 - Guided Coding Exercise: Variable Declarations & Case-Sensitivity**
 
    **Objective:**
-   Learn to create, use, and drop a database using SQL. This exercise will introduce basic SQL commands and file management practices for database development.
-
-   **Folder Structure:**
-   ```txt
-   university_db/
-   ├── create_and_use_db.sql
-   └── drop_db.sql
-   ```
+   - Create variables with different native data types (integers, decimals, strings).
+   - Understand the importance of case-sensitivity in identifiers.
 
    **File Naming Convention:**
-   - `create_and_use_db.sql`: Contains SQL statements for creating and using the database.
-   - `drop_db.sql`: Contains the SQL statement for dropping the database.
+   - `VariablesAndCaseSensitivity.java`
 
    **Notable Observations (to be discussed after completing the exercise):**
-   - **Case Sensitivity:** Database and table names might be case-sensitive depending on your SQL system. It's good practice to be consistent with casing.
-   - **Error Handling:** In a real application, you would want to add more robust error handling (e.g., checking if the database already exists before creating it).
-   - **Database Design:** This exercise only covers creating and dropping the database. The next step would be to design the tables within the `UniversityDB` to store information about students, courses, instructors, etc.
-   - **SQL Syntax:** The SQL syntax might vary slightly between different database systems. Refer to the documentation for your specific DBMS.
-   - `IF EXISTS` **Clause:** The `IF EXISTS` clause in the `DROP DATABASE` statement is a good practice to prevent errors if the database doesn't exist.
-   - **Verification:** The `SELECT DATABASE();` (or equivalent) statement is a useful way to confirm which database is currently being used.
+   - Observe the output. Notice how counter and Counter have different values, proving that Java is case-sensitive.
+
+   **Java Programming Best Practices:**
+- Use descriptive variable names (e.g., studentAge instead of just age).
+- Follow Java naming conventions (camelCase for variables: studentAge, itemPrice).
+- Add comments to your code to explain what it does (we haven't added many here, but it's a good habit to get into!).
       
    **Step-by-Step Instructions:**
 
-   1. Setting up the Environment
-      - Ensure you have a SQL database management system installed (e.g., MySQL, PostgreSQL, SQL Server). This exercise will use generic SQL syntax, but you might need to adjust slightly depending on your specific DBMS.
-      - Create the `university_db` directory. Inside it, create the two SQL files as shown in the folder structure above.
+   1. Class and Main Method
+      - Create a file named `VariablesAndCaseSensitivity`.java.
+      - Define the class `VariablesAndCaseSensitivity`.
+      - Inside the class, define the `main` method.  This is where your program starts running.
+      ```Java
+      public class VariablesAndCaseSensitivity {
+          public static void main(String[] args) {
       
-   2. create_and_use_db.sql (Create and Use Database):
-      - Open `create_and_use_db.sql` in a text editor.
-      - Create the Database:
-      ```SQL
-      -- Step 1: Create a database called UniversityDB
-      CREATE DATABASE UniversityDB;
+          }
+      }
       ```
       
-      - Use the Database:
-      ```SQL
-      -- Step 2: Use the newly created database
-      USE UniversityDB;
-
-      -- Verification (Optional): You can add a simple query to verify the database is selected.
-      SELECT DATABASE(); -- This will show the currently selected database.
+   2. Declare an Integer Variable
+      - Inside the `main` method, declare an integer variable named `studentAge` and initialize it with a whole number (e.g., 15).
+      ```Java
+      int studentAge = 15;
       ```
-      
-      - Save the `create_and_use_db.sql` file.
-      
-   3. `drop_db.sql` (Drop Database):
-      - Open `drop_db.sql` in a text editor.
-      - Drop the Database
-         ```SQL
-         -- Step 3: (Optional) Drop the database if needed.  Use with extreme caution!
-         USE UniversityDB;
-         DROP DATABASE IF EXISTS UniversityDB; -- The IF EXISTS clause prevents an error if the database doesn't exist.
-         ```
-      - Save the `drop_db.sql` file.
+            
+   3. Declare a Double Variable
+      - Below the `studentAge` declaration, declare a double variable named `itemPrice` and initialize it with a decimal number (e.g., 29.99).
+      ```Java
+      double itemPrice = 29.99;
+      ```
 
-   4. Executing the SQL Scripts:
-      - Open your SQL client (e.g., MySQL Workbench, pgAdmin, SQL Server Management Studio). Connect to your database server.
-      - Creating and Using: Open the `create_and_use_db.sql` file in your SQL client or execute it from the command line. This will create the `UniversityDB` and switch the connection to use it.
-      - Dropping: If you want to drop the database (e.g., to start over), open the `drop_db.sql` file in your SQL client or execute it. Be very careful with this command, as it will permanently delete the database and all its data.
+   4. Declare a String Variable
+      - Below the `itemPrice` declaration, declare a String variable named `studentName` and initialize it with a name (e.g., "Alice").  Remember that Strings are enclosed in double quotes.
+      ```Java
+      String studentName = "Alice";
+      ```
+
+   5. Demonstrate Case Sensitivity (Variable 1)
+      - Declare an integer variable named `counter` and initialize it with a number (e.g., 10).
+      ```Java
+      int counter = 10;
+      ```
+
+   6. Demonstrate Case Sensitivity (Variable 2)
+      - Declare another integer variable named `Counter` (notice the capital 'C'). Initialize it with a different number (e.g., 20).
+      ```Java
+      int Counter = 20;
+      ```
+
+   7. Output the Values (Age)
+      - Use `System.out.println()` to display the value of the `studentAge` variable along with a descriptive label (e.g., "Student Age: ").
+      ```Java
+      System.out.println("Student Age: " + studentAge);
+      ```
+
+   8. Output the Values (Price)
+      - Use `System.out.println()` to display the value of the `itemPrice` variable with a label (e.g., "Item Price: $").
+      ```Java
+      System.out.println("Item Price: $" + itemPrice);
+      ```
+
+   9. Output the Values (Name)
+      - Use `System.out.println()` to display the value of the `studentName` variable with a label (e.g., "Student Name: ").
+      ```Java
+      System.out.println("Student Name: " + studentName);
+      ```
+
+   10. Output Case Sensitivity Variables
+      - Use `System.out.println()` to display the value of both `counter` and `Counter` variables, each with its own label. This will demonstrate that Java treats them as two distinct variables.
+      ```Java
+      System.out.println("Counter: " + counter);
+      System.out.println("Counter (Different Case): " + Counter);
+      ```
+
+   11. Compile and Run
+      - Save the file as `VariablesAndCaseSensitivity.java`.
+      - Compile the code using `javac VariablesAndCaseSensitivity.java` in your terminal or command prompt.
+      - Run the compiled code using `java VariablesAndCaseSensitivity`.
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
@@ -163,7 +190,7 @@ Once you've completed your changes, follow these steps to upload your work to yo
    Write a meaningful commit message:
    
    ```bash
-   git commit -m "Submitting ADVDBMS Week 02 - Session 01 - Exercise 01"
+   git commit -m "Submitting OBJPROG Week 02 - Session 01 - Exercise 02"
    ```
    
 4. Push your changes to GitHub:
