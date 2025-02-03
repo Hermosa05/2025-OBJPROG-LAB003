@@ -152,21 +152,23 @@ Only perform this if this is the first time you will setup your Git Environment
 
    9. Output the Values (Name)
       - Use `System.out.println()` to display the value of the `studentName` variable with a label (e.g., "Student Name: ").
-      ```Java
-      System.out.println("Student Name: " + studentName);
-      ```
 
-   10. Output Case Sensitivity Variables
+```Java
+System.out.println("Student Name: " + studentName);
+```
+
+   11. Output Case Sensitivity Variables
       - Use `System.out.println()` to display the value of both `counter` and `Counter` variables, each with its own label. This will demonstrate that Java treats them as two distinct variables.
-      ```Java
-      System.out.println("Counter: " + counter);
-      System.out.println("Counter (Different Case): " + Counter);
-      ```
 
-   11. Compile and Run
-      - Save the file as `VariablesAndCaseSensitivity.java`.
-      - Compile the code using `javac VariablesAndCaseSensitivity.java` in your terminal or command prompt.
-      - Run the compiled code using `java VariablesAndCaseSensitivity`.
+```Java
+System.out.println("Counter: " + counter);
+System.out.println("Counter (Different Case): " + Counter);
+```
+
+   13. Compile and Run
+- Save the file as `VariablesAndCaseSensitivity.java`.
+- Compile the code using `javac VariablesAndCaseSensitivity.java` in your terminal or command prompt.
+- Run the compiled code using `java VariablesAndCaseSensitivity`.
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
