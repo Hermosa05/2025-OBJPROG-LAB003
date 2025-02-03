@@ -97,7 +97,7 @@ Only perform this if this is the first time you will setup your Git Environment
    **Step-by-Step Instructions:**
 
    1. Class and Main Method
-      - Create a file named `VariablesAndCaseSensitivity`.java.
+      - Create a file named `VariablesAndCaseSensitivity.java`.
       - Define the class `VariablesAndCaseSensitivity`.
       - Inside the class, define the `main` method.  This is where your program starts running.
       ```Java
