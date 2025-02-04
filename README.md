@@ -86,11 +86,12 @@ Only perform this if this is the first time you will setup your Git Environment
 
    **Desired Output:**
    ```txt
-   Student Age: 15
-   Item Price: $29.99
-   Student Name: Alice
-   Counter: 10
-   Counter (Different Case): 20
+   Enter an integer: 5
+   Enter a decimal number: 10
+   Enter a word or sentence: This is a String
+   Your integer: 5
+   Your decimal number: 10.00
+   Your string: This is a String
    ```
 
    **File Naming Convention:**
