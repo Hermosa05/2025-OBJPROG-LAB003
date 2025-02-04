@@ -84,6 +84,15 @@ Only perform this if this is the first time you will setup your Git Environment
    - Apply text formatting when displaying numbers, decimals, and strings.
    - Understand the differences between `print`, `println`, and `printf`.
 
+   **Desired Output:**
+   ```txt
+   Student Age: 15
+   Item Price: $29.99
+   Student Name: Alice
+   Counter: 10
+   Counter (Different Case): 20
+   ```
+
    **File Naming Convention:**
    - `InputOutputDemo.java`
 
