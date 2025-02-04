@@ -175,9 +175,9 @@ Only perform this if this is the first time you will setup your Git Environment
 
    10. Output Case Sensitivity Variables
       - It's good practice to close the `Scanner` object when you're finished with it to release system resources.
-      ```Java
-      input.close();
-      ```
+```Java
+input.close();
+```
 
    11. Compile and Run
       - Save the file as `InputOutputDemo.java`.
