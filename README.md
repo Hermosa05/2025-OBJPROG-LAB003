@@ -1,4 +1,4 @@
-# **2025-OBJPROG-WK02S0E02**
+# **2025-OBJPROG-LAB003**
 Week 02 - Introduction to Java Programming
 
 Laboratory # 03 - Guided Coding Exercise: Input and Output with Text Formatting
