@@ -1,7 +1,7 @@
-2025-OBJPROG-WK02S0E02
+# **2025-OBJPROG-WK02S0E02**
 Week 02 - Introduction to Java Programming
 
-Exercise # 02 - Guided Coding Exercise: Input and Output with Text Formatting
+Laboratory # 03 - Guided Coding Exercise: Input and Output with Text Formatting
 
 ## **Instructions**
 
@@ -77,7 +77,7 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Exercise # 02 - Guided Coding Exercise: Input and Output with Text Formatting**
+**Laboratory # 03 - Guided Coding Exercise: Input and Output with Text Formatting**
 
    **Objective:**
    - Learn to use input (via the `Scanner` class) and output statements.
@@ -98,10 +98,25 @@ Only perform this if this is the first time you will setup your Git Environment
    - `InputOutputDemo.java`
 
    **Notable Observations (to be discussed after completing the exercise):**
-   - `print()`: Displays output to the console, but the cursor stays on the same line after the output.  Subsequent output will appear immediately after the previous output.
-   - `println()`: Displays output to the console, and then moves the cursor to the next line.  This is the most commonly used output method.
-   - `printf()`:  Displays formatted output to the console.  It uses format specifiers (like `%d`, `%.2f`, `%s`) to control how the output is displayed.  It's very useful for creating neatly formatted tables and reports.  It also allows you to keep the cursor on the same line (like `print`) if you don't include a newline character (`%n`).
-      
+   - Input Handling: The activity demonstrates how to handle different types of input (integers, doubles, strings) using the Scanner class. The crucial step of consuming the newline character after numeric input is highlighted.
+   - Output Formatting: The use of printf() is the key observation. Students learn how to format output using format specifiers, which is very important for presenting data clearly. The difference between print(), println(), and printf() becomes clear.
+   - Newline Consumption: The exercise emphasizes the importance of handling the newline character left in the input buffer after reading numbers. This is a common source of errors for beginners.
+   - Resource Management: The instruction to close the Scanner is a good introduction to resource management, although the impact is more significant in larger applications.
+
+   **Java Best Practices**
+   - Import Necessary Classes: Remember to import classes you need, like java.util.Scanner for input. Do this before your class declaration.
+   - Scanner for Input: Use the Scanner class to get user input. Create a Scanner object connected to System.in.
+   - Prompt the User: Always provide clear prompts to the user so they know what kind of input is expected. Use System.out.print() for prompts on the same line as input.
+   - Handle Newlines: After reading numeric input (nextInt(), nextDouble()), use input.nextLine() to consume the leftover newline character before reading a string with nextLine(). This prevents skipping the string input.
+   - print(), println(), printf(): Understand the differences:
+      - print(): Output stays on the same line.
+      - println(): Output moves to the next line.
+      - printf(): Formatted output using format specifiers (%d, %.2f, %s, %n). Use printf() for precise control over output formatting.
+   - Format Specifiers: Use the correct format specifiers in printf(): %d for integers, %.2f for floating-point numbers (specifies 2 decimal places), %s for strings, and %n for newlines.
+   - Close the Scanner: Close the Scanner object (input.close()) when you're finished with it to release resources. This is good practice, especially in larger programs.
+   - Descriptive Variable Names: Use meaningful names for your variables (e.g., userInt, userDouble, userString). This makes your code more readable.
+   - Comments: Add comments to explain what your code does. This is essential for understanding and maintaining code.
+
    **Step-by-Step Instructions:**
 
    1. Import the Scanner Class
